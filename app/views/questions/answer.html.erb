@@ -1,0 +1,19 @@
+<div class="container">
+  <!--Display app title-->
+  <h1>Stupid Coaching</h1>
+
+  <!-- display the user question-->
+  <div class="chat-box">
+    <p><%= @question %></p>
+    <p><em>-You</em></p>
+  </div>
+
+  <!-- display the coach answer-->
+  <div class="chat-box bg-yellow">
+  <p><%= @answer %></p>
+  <p><em>-Your coach</em></p>
+  </div>
+
+  <!-- display a link to go back and ask a new question-->
+  <p><%= link_to "Ask a new question", ask_path %></p>
+</div>
